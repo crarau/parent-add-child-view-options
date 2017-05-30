@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChildView" customModule="ParentChildStoryboard" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Lrm-Td-0jP" id="Z0a-2I-HQO"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="XcG-Il-wya"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrm-Td-0jP">
+                    <rect key="frame" x="62" y="34" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="QpJ-1p-cLf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.84550243996567265" green="0.84898850648383362" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lrm-Td-0jP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kQp-dE-4sM"/>
+                <constraint firstItem="Lrm-Td-0jP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lKI-jz-kld"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-68" y="-230"/>
+        </view>
+    </objects>
+</document>
